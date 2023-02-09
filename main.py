@@ -1,16 +1,12 @@
 import requests
 
-url = 'https://wttr.in/san%20francisco?nTqu&lang=en'
-response = requests.get(url)
-response.raise_for_status()     # Обязательная строчка. Нужна для понимания получения отклика от сервера.
-print(response.text)
-
-
-
-# url_1 = 'https://vsegda-pomnim.com/uploads/posts/2022-04/1650516991_77-vsegda-pomnim-com-p-tsvetok-foto-80.jpg'
-# response_1 = requests.get(url_1)
-# response_1.raise_for_status()
-#
-# filename = 'pic.jpg'
-# with open(filename, 'wb') as file:
-#     file.write(response_1.content)
+url_1 = 'https://wttr.in/%20Череповец?m?n?qTqu&lang=ru'
+url_2 = 'https://wttr.in/%20SVO?m?n?qTqu&lang=ru'
+url_3 = 'https://wttr.in/%20Лондон?m?n?qTqu&lang=ru'
+response_1 = requests.get(url_1)
+response_2 = requests.get(url_2)
+response_3 = requests.get(url_3)
+response_1.raise_for_status()
+print(response_1.text)
+print(response_2.text)
+print(response_3.text)
