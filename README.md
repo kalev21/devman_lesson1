@@ -3,9 +3,9 @@
 
 # Как установить
 
-Python3 должен быть уже установлен. Затем используйте pip (или pip3, есть конфликт с Python2) для установки requests:
+Python3 должен быть уже установлен. Затем используйте pip (или pip3, есть конфликт с Python2) для установки requirements.txt:
 
-pip install requests
+pip install requirements.txt
 
 
 
